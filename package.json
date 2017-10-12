@@ -1,0 +1,23 @@
+{
+  "name": "homely-paws-mean-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cookie-parser": "*",
+    "cors": "*",
+    "debug": "*",
+    "express": "*",
+    "jade": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "nodemon": "*",
+    "serve-favicon": "*"
+  },
+  "devDependencies": {
+    "eslint-config-google": "*"
+  }
+}

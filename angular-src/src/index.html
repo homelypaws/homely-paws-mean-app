@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to Homely Paws</title>
+  <base href="/">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Material Design Bootstrap -->
+  <link href="./assets/css/mdb.min.css" rel="stylesheet">
+
+  <!-- Template styles -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <app-root></app-root>
+
+  <!-- SCRIPTS -->
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./assets/js/tether.min.js"></script>
+  <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="./assets/js/mdb.min.js"></script>
+
+  <!-- Animations init-->
+  <script>
+    new WOW().init();
+
+    $(document).on('click', function (event) {
+      var $clickedOn = $(event.target),
+        $collapsableItems = $('.collapse'),
+        isToggleButton = ($clickedOn.closest('.navbar-toggle').length == 1),
+        isLink = ($clickedOn.closest('a').length == 1),
+        isOutsideNavbar = ($clickedOn.parents('.navbar').length == 0);
+
+      if ((!isToggleButton && isLink) || isOutsideNavbar) {
+        $collapsableItems.each(function () {
+          $(this).collapse('hide');
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
