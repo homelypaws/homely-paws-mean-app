@@ -1,2 +1,3 @@
 # homely-paws-mean-app
-### Homely Paws Application is a MEAN stack application. M stands for MongoDB, E stands for Express Framework, A stands for Angular and N stands for Node.js.
+### The application is based on MEAN stack technologies which stands for MongoDB, Express Framework, Angular and Node.js. Thus, to successfully run this application in the local environment, Node.js and Angular CLI must be installed on the local machine. Also, the application uses a cloud MongoDB service called mLab.
+
